@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from https://anchor-capital-site.vercel.app/analysis.html by HTTrack Website Copier/3.x [XR&CO], Wed, 07 Oct 2026 04:29:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analysis – Anchor Capital</title>
+<meta name="description" content="Fundamental, financial and technical analysis with twelve indicators and the Anchor Capital Score.">
+<meta name="theme-color" content="#060d1f">
+<link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&amp;family=Fira+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/components.js"></script>
+<noscript><style>.curtain{display:none}.rv{opacity:1!important;transform:none!important}.words .w>span{transform:none!important}</style></noscript>
+</head>
+<body>
+
+<div class="curtain" id="curtain" aria-hidden="true"><div class="curtain-in"><div class="a-wrap"><img src="assets/AnchorSymbol.png" alt="Anchor Symbol" class="curtain-symbol"></div><b>ANCHOR CAPITAL</b><small>RESEARCH · DISCIPLINE · TRUST</small></div><div class="curtain-line"></div></div>
+<a class="skip" href="#content">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+<symbol id="i-list" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></symbol>
+<symbol id="i-scan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2M7 12h10"/></symbol>
+<symbol id="i-trend" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></symbol>
+<symbol id="i-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+<symbol id="i-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></symbol>
+<symbol id="i-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></symbol>
+<symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5L17 22l-5-3-5 3 1.5-8.5"/></symbol>
+<symbol id="i-bars" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10M18 20V4M6 20v-4"/></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l10 5-10 5L2 7l10-5zM2 12l10 5 10-5M2 17l10 5 10-5"/></symbol>
+<symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
+</defs></svg>
+
+<site-header current="analysis.html"></site-header>
+
+<main id="content">
+<section class="page-hero"><div class="wrap">
+  <div class="crumbs rv"><a href="index.html">Home</a> / Analysis</div>
+  <h1 class="words">Fundamentals, financials, <em>technicals</em> and indicators.</h1>
+  <p class="lead rv" style="--d:.3s">Understand whether the business is improving, and whether the price agrees.</p>
+</div></section>
+<!-- ===== 4-Pillar Interactive Analysis Slider ===== -->
+<section class="analysis-slider-section" id="analysis-matrix">
+  <div class="wrap">
+    <div class="sec-head center">
+      <div class="eyebrow rv">Evaluation Matrix</div>
+      <h2 class="words">Four Dimensions of Comprehensive Stock Analysis</h2>
+      <p class="lead rv">Explore the foundational screening criteria across Fundamentals, Financials, Technicals, and Institutional Indicators.</p>
+    </div>
+
+    <!-- Main Slider Box -->
+    <div class="analysis-slider-wrap rv" id="analysisSlider" tabindex="0" aria-label="Analysis categories interactive carousel">
+      <div class="analysis-track" id="analysisTrack">
+
+        <!-- Slide 1: Fundamental Analysis -->
+        <article class="analysis-slide active" role="tabpanel" aria-label="Fundamental Analysis">
+          <div class="a-slide-left">
+            <div class="a-slide-header">
+              <div class="a-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              </div>
+              <div>
+                <span class="tab-badge">Pillar 01</span>
+                <h3>Fundamental Analysis</h3>
+              </div>
+            </div>
+            <p class="a-slide-desc">Is the underlying business truly compounding? We examine multi-year sales velocity, profit margins, promoter alignment, and institutional accumulation patterns before assessing share price.</p>
+            <div class="a-rule-box">
+              <small>Anchor Core Screening Rule</small>
+              <p>Promoter holding consistency without pledging, combined with steady 3-year compound sales growth, constitutes our initial eligibility baseline.</p>
+            </div>
+          </div>
+          <div class="a-slide-right">
+            <div class="a-metrics-head">
+              <h4>Key Fundamental Criteria</h4>
+              <span class="mono note">10 Primary Metrics</span>
+            </div>
+            <div class="a-metrics-grid">
+              <div class="a-metric-card"><span class="a-num">01</span><span class="a-text">Sales growth</span></div>
+              <div class="a-metric-card"><span class="a-num">02</span><span class="a-text">Sales CAGR 3 years</span></div>
+              <div class="a-metric-card"><span class="a-num">03</span><span class="a-text">Profit growth</span></div>
+              <div class="a-metric-card"><span class="a-num">04</span><span class="a-text">Annual profit</span></div>
+              <div class="a-metric-card"><span class="a-num">05</span><span class="a-text">Earning consistency</span></div>
+              <div class="a-metric-card"><span class="a-num">06</span><span class="a-text">Promoters holding</span></div>
+              <div class="a-metric-card"><span class="a-num">07</span><span class="a-text">FII holdings</span></div>
+              <div class="a-metric-card"><span class="a-num">08</span><span class="a-text">DII holdings</span></div>
+              <div class="a-metric-card"><span class="a-num">09</span><span class="a-text">Promoters pledge</span></div>
+              <div class="a-metric-card"><span class="a-num">10</span><span class="a-text">Change in FII / DII holdings</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 2: Financial Analysis -->
+        <article class="analysis-slide" role="tabpanel" aria-label="Financial Analysis" aria-hidden="true">
+          <div class="a-slide-left">
+            <div class="a-slide-header">
+              <div class="a-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
+              <div>
+                <span class="tab-badge">Pillar 02</span>
+                <h3>Financial Analysis</h3>
+              </div>
+            </div>
+            <p class="a-slide-desc">How robust and sustainable are the reported numbers? We evaluate operational efficiency, return on equity (ROE &amp; ROCE), debt ratios, and quarterly earnings acceleration.</p>
+            <div class="a-rule-box">
+              <small>Quarterly Momentum Rule</small>
+              <p>Current quarterly net profit must be strictly greater than the previous quarter to trigger our high-priority screening filter.</p>
+            </div>
+          </div>
+          <div class="a-slide-right">
+            <div class="a-metrics-head">
+              <h4>Financial Ratios &amp; Metrics</h4>
+              <span class="mono note">12 Verified Ratios</span>
+            </div>
+            <div class="a-metrics-grid">
+              <div class="a-metric-card"><span class="a-num">01</span><span class="a-text">Annual profit</span></div>
+              <div class="a-metric-card"><span class="a-num">02</span><span class="a-text">Annual profit &gt; last year</span></div>
+              <div class="a-metric-card"><span class="a-num">03</span><span class="a-text">Quarterly profit</span></div>
+              <div class="a-metric-card"><span class="a-num">04</span><span class="a-text">Quarterly profit &gt; previous</span></div>
+              <div class="a-metric-card"><span class="a-num">05</span><span class="a-text">P/E ratio</span></div>
+              <div class="a-metric-card"><span class="a-num">06</span><span class="a-text">Debt to equity</span></div>
+              <div class="a-metric-card"><span class="a-num">07</span><span class="a-text">ROE &amp; ROCE</span></div>
+              <div class="a-metric-card"><span class="a-num">08</span><span class="a-text">EPS (Earnings Per Share)</span></div>
+              <div class="a-metric-card"><span class="a-num">09</span><span class="a-text">PAT (Profit After Tax)</span></div>
+              <div class="a-metric-card"><span class="a-num">10</span><span class="a-text">OPM (Operating Margin)</span></div>
+              <div class="a-metric-card"><span class="a-num">11</span><span class="a-text">Current ratio</span></div>
+              <div class="a-metric-card"><span class="a-num">12</span><span class="a-text">Dividend yield</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 3: Technical Analysis -->
+        <article class="analysis-slide" role="tabpanel" aria-label="Technical Analysis" aria-hidden="true">
+          <div class="a-slide-left">
+            <div class="a-slide-header">
+              <div class="a-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+              </div>
+              <div>
+                <span class="tab-badge">Pillar 03</span>
+                <h3>Technical Analysis</h3>
+              </div>
+            </div>
+            <p class="a-slide-desc">What is real-time market participation revealing? We track institutional delivery surges, relative strength versus benchmark Nifty 50, and decisive structural breakout levels.</p>
+            <div class="a-rule-box">
+              <small>Institutional Confirmation Rule</small>
+              <p>Resistance breakouts accompanied by delivery volume exceeding 50% confirm authentic institutional demand over speculative noise.</p>
+            </div>
+          </div>
+          <div class="a-slide-right">
+            <div class="a-metrics-head">
+              <h4>Price &amp; Volume Factors</h4>
+              <span class="mono note">12 Technical Conditions</span>
+            </div>
+            <div class="a-metrics-grid">
+              <div class="a-metric-card"><span class="a-num">01</span><span class="a-text">Volume analysis</span></div>
+              <div class="a-metric-card"><span class="a-num">02</span><span class="a-text">Volume breakout</span></div>
+              <div class="a-metric-card"><span class="a-num">03</span><span class="a-text">Delivery percentage</span></div>
+              <div class="a-metric-card"><span class="a-num">04</span><span class="a-text">Price × volume confirmation</span></div>
+              <div class="a-metric-card"><span class="a-num">05</span><span class="a-text">Relative strength vs Nifty 50</span></div>
+              <div class="a-metric-card"><span class="a-num">06</span><span class="a-text">Underperforming market check</span></div>
+              <div class="a-metric-card"><span class="a-num">07</span><span class="a-text">Pivot point reference</span></div>
+              <div class="a-metric-card"><span class="a-num">08</span><span class="a-text">Breaks resistance with huge vol</span></div>
+              <div class="a-metric-card"><span class="a-num">09</span><span class="a-text">Delivery consistency &gt;50%</span></div>
+              <div class="a-metric-card"><span class="a-num">10</span><span class="a-text">Higher high / higher low</span></div>
+              <div class="a-metric-card"><span class="a-num">11</span><span class="a-text">Lower high / lower low</span></div>
+              <div class="a-metric-card"><span class="a-num">12</span><span class="a-text">Bullish / bearish structure</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 4: Indicators Toolkit -->
+        <article class="analysis-slide" role="tabpanel" aria-label="12 Key Indicators" aria-hidden="true">
+          <div class="a-slide-left">
+            <div class="a-slide-header">
+              <div class="a-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+              </div>
+              <div>
+                <span class="tab-badge">Pillar 04</span>
+                <h3>Indicators Toolkit</h3>
+              </div>
+            </div>
+            <p class="a-slide-desc">A disciplined institutional toolkit ready on every setup. Twelve battle-tested momentum, trend-following, and volume-weighted indicators eliminate guesswork and emotional bias.</p>
+            <div class="a-rule-box">
+              <small>Confluence Verification</small>
+              <p>We require trend strength (ADX &gt; 25), momentum agreement (RSI in bull range), and price staying above MVWAP for optimal probability entries.</p>
+            </div>
+          </div>
+          <div class="a-slide-right">
+            <div class="a-metrics-head">
+              <h4>Twelve Standard Indicators</h4>
+              <span class="mono note">Algorithmic Suite</span>
+            </div>
+            <div class="a-metrics-grid">
+              <div class="a-metric-card"><span class="a-num">01</span><span class="a-text">ADX (Average Directional)</span></div>
+              <div class="a-metric-card"><span class="a-num">02</span><span class="a-text">Bollinger Bands</span></div>
+              <div class="a-metric-card"><span class="a-num">03</span><span class="a-text">SMA (Simple Moving Avg)</span></div>
+              <div class="a-metric-card"><span class="a-num">04</span><span class="a-text">Double Moving Average</span></div>
+              <div class="a-metric-card"><span class="a-num">05</span><span class="a-text">MACD with Histogram</span></div>
+              <div class="a-metric-card"><span class="a-num">06</span><span class="a-text">On Balance Volume (OBV)</span></div>
+              <div class="a-metric-card"><span class="a-num">07</span><span class="a-text">Pivot Points</span></div>
+              <div class="a-metric-card"><span class="a-num">08</span><span class="a-text">Rate of Change % (ROC)</span></div>
+              <div class="a-metric-card"><span class="a-num">09</span><span class="a-text">RSI (Relative Strength)</span></div>
+              <div class="a-metric-card"><span class="a-num">10</span><span class="a-text">Stochastic Oscillator</span></div>
+              <div class="a-metric-card"><span class="a-num">11</span><span class="a-text">Williams %R</span></div>
+              <div class="a-metric-card"><span class="a-num">12</span><span class="a-text">MVWAP (Moving VWAP)</span></div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+      <!-- Navigation Dots -->
+      <div class="slider-dots-wrap">
+        <div class="sec-dots" id="anaDots"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Signals & Market Execution Slider ===== -->
+<section class="signals-slider-section">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow rv">Screening &amp; Signals Showcase</div>
+      <h2 class="words">Price, Volume &amp; Quarterly Momentum Triggers</h2>
+      <p class="lead rv">Swipe through our screening logic, technical triggers, and volume verification rules that power Anchor Capital Pro.</p>
+    </div>
+
+    <div class="sig-slider-wrap rv" id="sigSlider" tabindex="0" aria-label="Screening and signals carousel">
+      <div class="sig-track" id="sigTrack">
+
+        <!-- Signal Slide 1: Technical Signals -->
+        <div class="sig-slide active" aria-hidden="false">
+          <div class="sig-slide-head">
+            <div class="eyebrow" style="margin-bottom:6px">Signal Cluster 01</div>
+            <h3 style="font-size:24px;color:var(--ink)">Technical Signals &amp; Momentum Filters</h3>
+            <p class="note" style="margin-top:4px">Real-time parameters evaluated across multiple timeframes.</p>
+          </div>
+          <div class="sig-cards-grid">
+            <article class="sig-feature-card">
+              <div>
+                <div class="ico"><svg aria-hidden="true"><use href="#i-trend"/></svg></div>
+                <h4>RSI Momentum</h4>
+                <p>Identifies overbought (&gt;70) and oversold (&lt;30) zones alongside bullish divergences.</p>
+              </div>
+              <span class="sig-tag">Momentum Context</span>
+            </article>
+            <article class="sig-feature-card">
+              <div>
+                <div class="ico"><svg aria-hidden="true"><use href="#i-target"/></svg></div>
+                <h4>ADX Trend Strength</h4>
+                <p>Quantifies whether price direction is supported by real underlying trend force (&gt;25).</p>
+              </div>
+              <span class="sig-tag">Trend Power</span>
+            </article>
+            <article class="sig-feature-card">
+              <div>
+                <div class="ico"><svg aria-hidden="true"><use href="#i-scale"/></svg></div>
+                <h4>Pivot Point Reference</h4>
+                <p>Calculates daily baseline support/resistance to identify bullish bias above central pivot.</p>
+              </div>
+              <span class="sig-tag">Support &amp; Resistance</span>
+            </article>
+            <article class="sig-feature-card">
+              <div>
+                <div class="ico"><svg aria-hidden="true"><use href="#i-bars"/></svg></div>
+                <h4>15-Minute Candle Open</h4>
+                <p>Detects immediate intraday directional bias by comparing candle opening to prior bars.</p>
+              </div>
+              <span class="sig-tag">Intraday Structure</span>
+            </article>
+            <article class="sig-feature-card">
+              <div>
+                <div class="ico"><svg aria-hidden="true"><use href="#i-layers"/></svg></div>
+                <h4>Volume Ratio</h4>
+                <p>Measures today's transaction intensity against the 20-day historical average.</p>
+              </div>
+              <span class="sig-tag">Volume Surge</span>
+            </article>
+            <article class="sig-feature-card">
+              <div>
+                <div class="ico"><svg aria-hidden="true"><use href="#i-check"/></svg></div>
+                <h4>Price Action Confirmation</h4>
+                <p>Validates higher-high and higher-low progression to ensure the trend remains intact.</p>
+              </div>
+              <span class="sig-tag">Trend Structure</span>
+            </article>
+          </div>
+        </div>
+
+        <!-- Signal Slide 2: Volume & Market Activity -->
+        <div class="sig-slide" aria-hidden="true">
+          <div class="sig-slide-head">
+            <div class="eyebrow" style="margin-bottom:6px">Signal Cluster 02</div>
+            <h3 style="font-size:24px;color:var(--ink)">Volume &amp; Participation Metrics</h3>
+            <p class="note" style="margin-top:4px">Measure real institutional buying conviction, not just price fluctuations.</p>
+          </div>
+          <div class="sig-cards-grid">
+            <article class="sig-feature-card">
+              <div>
+                <div class="ico"><svg aria-hidden="true"><use href="#i-bars"/></svg></div>
+                <h4>Today's Volume</h4>
+                <p>Current session traded volume, monitored continuously for abnormal spikes.</p>
+              </div>
+              <span class="sig-tag">Current Activity</span>
+            </article>
+            <article class="sig-feature-card">
+              <div>
+                <div class="ico"><svg aria-hidden="true"><use href="#i-layers"/></svg></div>
+                <h4>1-Week Average Volume</h4>
+                <p>Provides a reliable smoothed baseline to calibrate recent liquidity participation.</p>
+              </div>
+              <span class="sig-tag">Baseline Context</span>
+            </article>
+            <article class="sig-feature-card">
+              <div>
+                <div class="ico"><svg aria-hidden="true"><use href="#i-trend"/></svg></div>
+                <h4>Volume Variance</h4>
+                <p>Calculates exact standard divergence to flag institutional accumulation early.</p>
+              </div>
+              <span class="sig-tag">Divergence Alert</span>
+            </article>
+            <article class="sig-feature-card">
+              <div>
+                <div class="ico"><svg aria-hidden="true"><use href="#i-scale"/></svg></div>
+                <h4>Buy / Sell Ratio</h4>
+                <p>Compares total executed bid orders against ask depth to confirm buyer predominance.</p>
+              </div>
+              <span class="sig-tag">Order Flow Depth</span>
+            </article>
+            <article class="sig-feature-card">
+              <div>
+                <div class="ico"><svg aria-hidden="true"><use href="#i-shield"/></svg></div>
+                <h4>Delivery Percentage (&gt;50%)</h4>
+                <p>Filters out intraday day-trading noise by measuring actual demat shares taken home.</p>
+              </div>
+              <span class="sig-tag">Delivery Absorption</span>
+            </article>
+            <article class="sig-feature-card">
+              <div>
+                <div class="ico"><svg aria-hidden="true"><use href="#i-target"/></svg></div>
+                <h4>Price × Volume Expansion</h4>
+                <p>Ensures upward moves are validated by massive liquidity, avoiding low-volume bull traps.</p>
+              </div>
+              <span class="sig-tag">Breakout Validation</span>
+            </article>
+          </div>
+        </div>
+
+        <!-- Signal Slide 3: Primary Screening Model -->
+        <div class="sig-slide" aria-hidden="true">
+          <div class="sig-slide-head">
+            <div class="eyebrow" style="margin-bottom:6px">Signal Cluster 03</div>
+            <h3 style="font-size:24px;color:var(--ink)">Primary Screening Idea &amp; Universe Filter</h3>
+            <p class="note" style="margin-top:4px">How Anchor Capital Pro segregates high-conviction ideas from over 5,000 listed stocks.</p>
+          </div>
+          <div class="sig-cards-grid">
+            <article class="sig-feature-card">
+              <div>
+                <div class="ico"><svg aria-hidden="true"><use href="#i-bars"/></svg></div>
+                <h4>Quarterly Profit Growth</h4>
+                <p>Latest quarterly profit must strictly surpass previous quarter numbers to indicate earnings acceleration.</p>
+              </div>
+              <span class="sig-tag">Core Screening Filter</span>
+            </article>
+            <article class="sig-feature-card">
+              <div>
+                <div class="ico"><svg aria-hidden="true"><use href="#i-trend"/></svg></div>
+                <h4>Sequential Profit % Growth</h4>
+                <p>Measures the exact percentage surge in net profit to highlight accelerating industry leadership.</p>
+              </div>
+              <span class="sig-tag">Growth Rate Metric</span>
+            </article>
+            <article class="sig-feature-card">
+              <div>
+                <div class="ico"><svg aria-hidden="true"><use href="#i-layers"/></svg></div>
+                <h4>Market Cap Calibration</h4>
+                <p>Evaluates candidates within NIFTY 50, NIFTY NEXT 50, and select high-weight midcaps.</p>
+              </div>
+              <span class="sig-tag">Curated 500 Universe</span>
+            </article>
+          </div>
+        </div>
+
+      </div>
+      <!-- Navigation Dots -->
+      <div class="slider-dots-wrap">
+        <div class="sec-dots" id="sigDots"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section><div class="wrap">
+  <div class="sec-head"><div class="eyebrow rv">Anchor Capital Score</div><h2 class="words">One score to bring multiple signals together.</h2></div>
+  <div class="grid g3" data-stagger="z">
+    <article class="card tile-card"><span class="num">FUNDAMENTALS</span><h3>Profit trend</h3><p>Profit trend · market-cap context · financial quality.</p></article>
+    <article class="card tile-card"><span class="num">TECHNICALS</span><h3>Price structure</h3><p>RSI · ADX · pivot · 15-minute candle · price.</p></article>
+    <article class="card tile-card"><span class="num">ACTIVITY</span><h3>Participation</h3><p>Volume · buy/sell · volume ratio · variance.</p></article>
+  </div>
+  <p class="objective words" style="font-size:clamp(20px,2.6vw,28px)">Anchor Capital Pro score <em>→ weighted model → revised priority list.</em></p>
+</div></section>
+<section class="cta" id="contact-band"><div class="wrap">
+  <div class="eyebrow rv" style="justify-content:center">Get in touch</div>
+  <h2 class="words">Research. Discipline. Trust.</h2>
+  <p class="lead rv">Questions about the tools, the 500-stock universe or opening an account? Talk to P. Rengasamy, Sharekhan Authorised Person.</p>
+  <div class="cta-row rv"><a class="btn btn-gold" href="contact.html">Contact us <svg aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="btn btn-ghost" href="tel:+919003813366">+91 90038 13366</a></div>
+</div></section>
+
+</main>
+
+<site-footer></site-footer>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+
+<!-- Mirrored from https://anchor-capital-site.vercel.app/analysis.html by HTTrack Website Copier/3.x [XR&CO], Wed, 07 Oct 2026 04:29:44 GMT -->
+</html>
