@@ -65,7 +65,7 @@
       this.innerHTML = `
 <div class="risk" role="note">Research and information only. Market investments are subject to risk. No automatic order placement is available on this website.</div>
 <header class="nav" id="nav"><div class="wrap nav-in">
-  <a href="index.html" class="brand" aria-label="Anchor Capital home"><img src="public/Anchor.png" alt="Anchor Capital" onerror="this.outerHTML='<span>ANCHOR<small>CAPITAL</small></span>'"></a>
+  <a href="index.html" class="brand" aria-label="Anchor Capital home"><img src="assets/Anchor.png" alt="Anchor Capital" onerror="this.outerHTML='<span>ANCHOR<small>CAPITAL</small></span>'"></a>
   <nav aria-label="Primary"><ul id="menu">${navLinks}<li><a class="btn btn-gold" href="contact.html" style="min-height:44px;padding:0 20px;margin-left:8px"${contactActive ? ' aria-current="page"' : ''}>Contact</a></li></ul></nav>
   <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span></button>
 </div></header>`;
@@ -126,7 +126,7 @@
 <footer><div class="wrap">
   <div class="f-grid">
     <div>
-      <a href="index.html" class="brand"><img src="public/Anchor.png" alt="Anchor Capital" onerror="this.outerHTML='<span>ANCHOR<small>CAPITAL</small></span>'"></a>
+      <a href="index.html" class="brand"><img src="assets/Anchor.png" alt="Anchor Capital" onerror="this.outerHTML='<span>ANCHOR<small>CAPITAL</small></span>'"></a>
       <p style="margin-top:14px;max-width:320px">${FOOTER_DATA.tagline}</p>
     </div>
     <div>
