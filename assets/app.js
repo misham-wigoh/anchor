@@ -745,6 +745,232 @@
   };
   initProjectShowcaseSlider();
 
+  /* ---------- Financial Gateway & Quarterly Results ---------- */
+  const initFinancialGateway = () => {
+    const section = $('#financial-gateway');
+    if (!section) return;
+
+    const cardsData = [
+      {
+        title: 'Quarterly results',
+        metricsLabel: 'Metrics 3/13',
+        defaultTooltip: { period: 'Revenue', rev: '6868 Cr.', exp: '4135 Cr.', np: '765 Cr.' },
+        quarters: [
+          { q: "Q1'21", revH: 34, expH: 26, rev: '3,840 Cr.', exp: '2,920 Cr.', np: '410 Cr.' },
+          { q: "Q2'21", revH: 38, expH: 29, rev: '4,150 Cr.', exp: '3,110 Cr.', np: '480 Cr.' },
+          { q: "Q3'21", revH: 42, expH: 31, rev: '4,520 Cr.', exp: '3,380 Cr.', np: '520 Cr.' },
+          { q: "Q4'21", revH: 46, expH: 33, rev: '4,890 Cr.', exp: '3,550 Cr.', np: '590 Cr.' },
+          { q: "Q1'22", revH: 49, expH: 36, rev: '5,180 Cr.', exp: '3,810 Cr.', np: '610 Cr.' },
+          { q: "Q2'22", revH: 54, expH: 39, rev: '5,540 Cr.', exp: '4,020 Cr.', np: '680 Cr.' },
+          { q: "Q3'22", revH: 60, expH: 43, rev: '5,960 Cr.', exp: '4,280 Cr.', np: '710 Cr.' },
+          { q: "Q4'22", revH: 65, expH: 47, rev: '6,310 Cr.', exp: '4,560 Cr.', np: '740 Cr.' },
+          { q: "Q1'23", revH: 70, expH: 50, rev: '6,868 Cr.', exp: '4,135 Cr.', np: '765 Cr.', highlight: true },
+          { q: "Q2'23", revH: 74, expH: 53, rev: '7,150 Cr.', exp: '4,380 Cr.', np: '810 Cr.' },
+          { q: "Q3'23", revH: 78, expH: 56, rev: '7,490 Cr.', exp: '4,620 Cr.', np: '860 Cr.' },
+          { q: "Q4'23", revH: 84, expH: 61, rev: '7,920 Cr.', exp: '4,880 Cr.', np: '920 Cr.' },
+          { q: "Q1'24", revH: 89, expH: 65, rev: '8,340 Cr.', exp: '5,120 Cr.', np: '980 Cr.' },
+          { q: "Q2'24", revH: 94, expH: 68, rev: '8,850 Cr.', exp: '5,410 Cr.', np: '1,040 Cr.' }
+        ]
+      },
+      {
+        title: 'Annual P&L Statements',
+        metricsLabel: 'Metrics 5/13',
+        defaultTooltip: { period: 'FY2024', rev: '32,450 Cr.', exp: '21,890 Cr.', np: '4,120 Cr.' },
+        quarters: [
+          { q: 'FY18', revH: 38, expH: 28, rev: '14,200 Cr.', exp: '10,500 Cr.', np: '1,820 Cr.' },
+          { q: 'FY19', revH: 46, expH: 33, rev: '16,800 Cr.', exp: '12,100 Cr.', np: '2,150 Cr.' },
+          { q: 'FY20', revH: 52, expH: 38, rev: '19,400 Cr.', exp: '13,900 Cr.', np: '2,480 Cr.' },
+          { q: 'FY21', revH: 60, expH: 44, rev: '22,600 Cr.', exp: '15,800 Cr.', np: '2,920 Cr.' },
+          { q: 'FY22', revH: 72, expH: 51, rev: '26,100 Cr.', exp: '17,900 Cr.', np: '3,410 Cr.' },
+          { q: 'FY23', revH: 85, expH: 58, rev: '29,800 Cr.', exp: '20,100 Cr.', np: '3,860 Cr.' },
+          { q: 'FY24', revH: 95, expH: 64, rev: '32,450 Cr.', exp: '21,890 Cr.', np: '4,120 Cr.', highlight: true }
+        ]
+      },
+      {
+        title: 'Cash Flow & Balance Sheet',
+        metricsLabel: 'Metrics 4/13',
+        defaultTooltip: { period: 'Operating CF', rev: '7,420 Cr.', exp: '3,210 Cr.', np: '4,210 Cr.' },
+        quarters: [
+          { q: 'FY19', revH: 42, expH: 25, rev: '4,200 Cr.', exp: '1,800 Cr.', np: '2,400 Cr.' },
+          { q: 'FY20', revH: 48, expH: 28, rev: '4,850 Cr.', exp: '2,100 Cr.', np: '2,750 Cr.' },
+          { q: 'FY21', revH: 58, expH: 34, rev: '5,600 Cr.', exp: '2,450 Cr.', np: '3,150 Cr.' },
+          { q: 'FY22', revH: 68, expH: 39, rev: '6,350 Cr.', exp: '2,800 Cr.', np: '3,550 Cr.' },
+          { q: 'FY23', revH: 80, expH: 44, rev: '7,100 Cr.', exp: '3,050 Cr.', np: '4,050 Cr.' },
+          { q: 'FY24', revH: 92, expH: 48, rev: '7,420 Cr.', exp: '3,210 Cr.', np: '4,210 Cr.', highlight: true }
+        ]
+      }
+    ];
+
+    let currentCardIndex = 0;
+    const cardTitleEl = $('#gwCardTitle');
+    const barsTrackEl = $('#gwBarsTrack');
+    const ttHeaderEl = $('#gwTtHeader');
+    const revValEl = $('#gwRevVal');
+    const expValEl = $('#gwExpVal');
+    const npValEl = $('#gwNpVal');
+    const metricsPillEl = $('#gwMetricsDropdown');
+    const prevBtn = $('#gwDeckPrev');
+    const nextBtn = $('#gwDeckNext');
+
+    const renderCard = (index) => {
+      const data = cardsData[index];
+      if (!data) return;
+
+      if (cardTitleEl) cardTitleEl.textContent = data.title;
+      if (metricsPillEl) {
+        const textSpan = metricsPillEl.querySelector('span');
+        if (textSpan) textSpan.textContent = data.metricsLabel;
+      }
+
+      // Reset tooltip
+      if (ttHeaderEl) ttHeaderEl.textContent = data.defaultTooltip.period;
+      if (revValEl) revValEl.textContent = data.defaultTooltip.rev;
+      if (expValEl) expValEl.textContent = data.defaultTooltip.exp;
+      if (npValEl) npValEl.textContent = data.defaultTooltip.np;
+
+      // Render Bars
+      if (barsTrackEl) {
+        barsTrackEl.innerHTML = data.quarters.map((q, i) => `
+          <div class="gw-bar-group${q.highlight ? ' active' : ''}" data-idx="${i}" title="${q.q}: Rev ${q.rev}">
+            <div class="gw-bar gw-bar-rev" style="height:${q.revH}%"></div>
+            <div class="gw-bar gw-bar-exp" style="height:${q.expH}%"></div>
+            <div class="gw-bar-profit"></div>
+          </div>
+        `).join('');
+
+        // Attach hover on bars
+        const groups = barsTrackEl.querySelectorAll('.gw-bar-group');
+        groups.forEach(g => {
+          g.addEventListener('mouseenter', () => {
+            groups.forEach(item => item.classList.remove('active'));
+            g.classList.add('active');
+            const qIdx = parseInt(g.dataset.idx, 10);
+            const qItem = data.quarters[qIdx];
+            if (qItem) {
+              if (ttHeaderEl) ttHeaderEl.textContent = `${qItem.q} Financials`;
+              if (revValEl) revValEl.textContent = qItem.rev;
+              if (expValEl) expValEl.textContent = qItem.exp;
+              if (npValEl) npValEl.textContent = qItem.np;
+            }
+          });
+        });
+      }
+    };
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        currentCardIndex = (currentCardIndex - 1 + cardsData.length) % cardsData.length;
+        renderCard(currentCardIndex);
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        currentCardIndex = (currentCardIndex + 1) % cardsData.length;
+        renderCard(currentCardIndex);
+      });
+    }
+
+    // View switchers
+    const viewBtns = section.querySelectorAll('.gw-view-btn');
+    viewBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        viewBtns.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+      });
+    });
+
+    // Initial render
+    renderCard(0);
+
+    /* Search Input & Cmd+K Shortcut */
+    const searchInput = $('#gwSearchInput');
+    const searchPopover = $('#gwSearchPopover');
+    const popoverList = $('#gwPopoverList');
+
+    const sampleCompanies = [
+      { sym: 'HDFCBANK', name: 'HDFC Bank Ltd', price: '₹708.25', chg: '+2.08%' },
+      { sym: 'RELIANCE', name: 'Reliance Industries', price: '₹2,980.00', chg: '+0.74%' },
+      { sym: 'TCS', name: 'Tata Consultancy Services', price: '₹2,200.80', chg: '+3.36%' },
+      { sym: 'INFY', name: 'Infosys Limited', price: '₹1,037.70', chg: '+0.12%' },
+      { sym: 'ICICIBANK', name: 'ICICI Bank Ltd', price: '₹1,248.50', chg: '+0.86%' },
+      { sym: 'MARUTI', name: 'Maruti Suzuki India', price: '₹12,450.00', chg: '+0.70%' },
+      { sym: 'ASIANPAINT', name: 'Asian Paints Ltd', price: '₹2,840.00', chg: '+0.50%' },
+      { sym: 'WIPRO', name: 'Wipro Limited', price: '₹485.30', chg: '+0.66%' },
+      { sym: 'BAJAJ-AUTO', name: 'Bajaj Auto Limited', price: '₹9,120.00', chg: '+0.49%' },
+      { sym: 'ADANIENT', name: 'Adani Enterprises Ltd', price: '₹3,060.00', chg: '+0.25%' }
+    ];
+
+    const renderSuggestions = (query = '') => {
+      if (!popoverList) return;
+      const q = query.trim().toUpperCase();
+      const filtered = q
+        ? sampleCompanies.filter(c => c.sym.includes(q) || c.name.toUpperCase().includes(q))
+        : sampleCompanies.slice(0, 5);
+
+      if (filtered.length === 0) {
+        popoverList.innerHTML = `<div style="padding:10px 16px;font-size:13px;color:rgba(255,255,255,0.45)">No matching companies found for "${query}"</div>`;
+        return;
+      }
+
+      popoverList.innerHTML = filtered.map(c => `
+        <div class="gw-popover-item" data-sym="${c.sym}">
+          <div>
+            <span class="gw-pop-sym">${c.sym}</span>
+            <div class="gw-pop-meta">${c.name}</div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-size:13px;font-weight:600">${c.price}</div>
+            <div style="font-size:11.5px;color:var(--up)">${c.chg}</div>
+          </div>
+        </div>
+      `).join('');
+
+      popoverList.querySelectorAll('.gw-popover-item').forEach(item => {
+        item.addEventListener('click', () => {
+          const sym = item.dataset.sym;
+          if (searchInput) searchInput.value = sym;
+          if (searchPopover) searchPopover.classList.remove('show');
+          window.location.href = `analysis.html?sym=${encodeURIComponent(sym)}`;
+        });
+      });
+    };
+
+    if (searchInput && searchPopover) {
+      searchInput.addEventListener('focus', () => {
+        renderSuggestions(searchInput.value);
+        searchPopover.classList.add('show');
+      });
+
+      searchInput.addEventListener('input', () => {
+        renderSuggestions(searchInput.value);
+        searchPopover.classList.add('show');
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!searchInput.contains(e.target) && !searchPopover.contains(e.target)) {
+          searchPopover.classList.remove('show');
+        }
+      });
+    }
+
+    // Keyboard shortcut Cmd+K or Ctrl+K
+    document.addEventListener('keydown', (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        if (searchInput) {
+          searchInput.focus();
+          searchInput.select();
+        }
+      }
+    });
+  };
+  initFinancialGateway();
+
   /* observe dynamic content once everything is rendered */
   if (document.body.classList.contains('ready')) observe();
 })();
